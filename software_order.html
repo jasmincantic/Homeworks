@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <h1>Software Order Form</h1>
+    <form>
+        <fieldset>
+            <legend>Licence details</legend>
+            <ul>
+                <li>Email adress <input type="email" name="email" required> </li>
+                <li>Website <input type="url" name="website" placeholder="http://www.example.com/" required> </li>
+                <li>Number of licences <input type="number" name="numoflic" placeholder="How many to buy (1-10)"
+                        required> </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Billing details</legend>
+            <ul>
+                <li>Name <input type="text" name="name" placeholder="First Last" required </li>
+                <li>Adress <textarea name="adr" placeholder="House number, street, city, state" required></textarea>
+                </li>
+                <li>Postal code <input type="number" name="code" placeholder="Post code or zip code" required> </li>
+                <li>Country
+                    <select name="country" required>
+                        <option value="mne">Montenegro</option>
+                        <option value="ser">Serbia</option>
+                        <option value="cro">Croatia</option>
+                        <option value="bih">Bosnia and Herzegovina</option>
+                        <option value="slo">Slovenia</option>
+                    </select>
+                </li>
+                <li>Phone <i>(optional)</i> <input type="number" name="phone"
+                        placeholder="include country prefix, e.g."> </li>
+            </ul>
+        </fieldset>
+        <fieldset>
+            <legend>Payment details</legend>
+            <ul>
+                <li>Card number <input type="number" name="cnum" placeholder="As shown on the front of your card"
+                        required> </li>
+                <li>CVV code <input type="number" name="cvv" placeholder="3-dig on the back of your card" required>
+                </li>
+                <li>Expiry Date <input type="month" name="exp" placeholder="YYYY-MM" required> </li>
+            </ul>
+        </fieldset>
+        <input type="submit" value="Place your Order">
+    </form>
+
+
+</body>
+
+</html>
